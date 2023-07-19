@@ -71,6 +71,7 @@ tags$div(HTML("Some questions:
     - <a href="https://github.com/DBecker7/DB7_TeachingApps#ci">ci</a>: Confidence Intervals.
     - <a href="https://github.com/DBecker7/DB7_TeachingApps#samplingDist">samplingDist</a>: Sampling Distributions.
     - <a href="https://github.com/DBecker7/DB7_TeachingApps#gettysburg">gettysburg</a>: Sampling designs using the Gettysburg Address.
+    - <a href="https://github.com/DBecker7/DB7_TeachingApps#Regularization">Regularization</a>: Ridge penalty example.
 - <a href="https://github.com/DBecker7/DB7_TeachingApps#animations">Animations</a>
     - <a href="https://github.com/DBecker7/DB7_TeachingApps#transform_norm">transform_norm</a>: Tansformation of a Normal to Lognormal
     - <a href="https://github.com/DBecker7/DB7_TeachingApps#BlockVariance">BlockVariance</a>: Blocking reduces variance.
@@ -416,9 +417,23 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
     subdir = "Apps/gettysburg")
 ```
 
+### Regularization (and Regularization1)
 
+<img src="Figures/Regularization.png" width="400" align="right">
 
+- Regularization1 demonstrates that flattening the slope will still fit the data since the intercept changes accordingly.
+- Regularization provides a demonstration of how the line changes. With the given data setup, the middle plot never really looks good, but you can see the horizontal slope increase to account for the restriction.
+- Uses **Ridge** regression.
 
+```r
+shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+    subdir = "Apps/Regularization")
+```
+
+```r
+shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+    subdir = "Apps/Regularization1")
+```
 
 
 
