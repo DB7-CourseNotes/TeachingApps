@@ -4,7 +4,7 @@ Some applications for self-discovery of statistical concepts and rules-of-thumb.
 
 To run these, you may need to install `dplyr`, `ggplot2`, and `patchwork` packages. If you get a `... not found` message, you're probably missing a package.
 
-You can copy and paste the code from here, or you can save <a href="https://github.com/DBecker7/DB7_TeachingApps/blob/master/ScriptToRunApps.R">`ScriptToRunApps.R`</a> to your computer and run them from there.
+You can copy and paste the code from here, or you can save <a href="https://github.com/DB7-CourseNotes/TeachingApps/blob/master/ScriptToRunApps.R">`ScriptToRunApps.R`</a> to your computer and run them from there.
 
 ----
 
@@ -14,11 +14,11 @@ For Devan:
 
 ggplot theming:
     theme(title = element_text(size = 16), axis.text = element_text(size = 14)) 
-    caption = "Created by Devan Becker\nGithub: DBecker7/DB7_TeachingApps"
+    caption = "Created by Devan Becker\nGithub: DB7-CourseNotes/TeachingApps"
 
 base R theming:
     mtext("Created by Devan Becker", side = 1, line = 3, adj = 1, cex = 0.8)
-    mtext("Github: DBecker7/DB7_TeachingApps", side = 1, line = 4, adj = 1, cex = 0.8)
+    mtext("Github: DB7-CourseNotes/TeachingApps", side = 1, line = 4, adj = 1, cex = 0.8)
     
 tags$div(HTML("Some questions:
 <ol><li></li>
@@ -45,41 +45,41 @@ tags$div(HTML("Some questions:
 
 ## Quick Reference
 
-- <a href="https://github.com/DBecker7/DB7_TeachingApps#tools">Tools</a>
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#pnorm">pnorm</a>: Calculate and visualize normal probabilities.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#pvalues">pvalues</a>: Calculate and visualize p-values (normal distr).
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#distrshapes">distrshapes</a>: How parameters affect shape of continuous distributions.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#distrshapes_disc">distrshapes_disc</a>: How parameters affect shape ofdiscrete distributions.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#simplepower">SimplePower</a>: Calculate power for simple null/alt (normal distr).
-- <a href="https://github.com/DBecker7/DB7_TeachingApps#self-discovery-apps">Self-Discovery Apps</a>
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#binormail">Binormail</a>: Normal approximation to the binomial.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#poisbinapprox">PoisBinApprox</a>: Poisson (and normal) approximation to the binomial.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#qqdistrfitting">QQDistrFittting</a>: QQ Plots to test distributional assumptions.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#scattercorr">ScatterCorr</a>: Scatterplots with a fixed correlation.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#influentialpoint">InfluentialPoint</a>: Move around a point to see it's affect on the line.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#multipleregressionpenguins">MultipleRegression Penguins</a>: See the effects of including/removing predictors.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#polyfit">Polynomial Fits</a>: See the effects of overfitting/underfitting with polynomials.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#serialcorrelation">SerialCorrelation</a>: Demonstrate autocorrelation and the runs test.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#meanlessmeansleft">MeanLessMeansLeft</a>: Generate distribution with fixed mean and median.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#denshist">DensHist</a>: Compare density plots to histograms.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#measurespread">MeasureSpread</a>: Fixed IQR and SD.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#poissoncatquant">PoissonCatQuant</a>: Barplots versus histograms.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#Conditionalnormal2">ConditionalNormal2</a>: Visualization of conditional distributions.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#indep">indep</a>: Visualization of independence.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#nlarge">nLarge</a>: How large must *n* be for CLT?.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#Z_or_t">Z_or_t</a>: How large must *n* be for normal p-value?.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#ci">ci</a>: Confidence Intervals.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#samplingDist">samplingDist</a>: Sampling Distributions.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#gettysburg">gettysburg</a>: Sampling designs using the Gettysburg Address.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#Regularization">Regularization</a>: Ridge penalty example.
-- <a href="https://github.com/DBecker7/DB7_TeachingApps#animations">Animations</a>
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#transform_norm">transform_norm</a>: Tansformation of a Normal to Lognormal
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#BlockVariance">BlockVariance</a>: Blocking reduces variance.
-- <a href="https://github.com/DBecker7/DB7_TeachingApps#credit-where-credit-is-due">Credit where credit is due</a>: Teaching materials that I can't beat.
-- <a href="https://github.com/DBecker7/DB7_TeachingApps#spatial-stats-apps">Spatial Stats Apps</a>
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#gausprocess_matern">GausProcess_Matern</a>: How Matern parameters affect a 1D Gaussian process.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#gausfield_matern">GausField_Matern</a>: How Matern parameters affect a 2D Gaussian process.
-    - <a href="https://github.com/DBecker7/DB7_TeachingApps#spatialfunkfunction">SpatialFun/Kfunciton</a>: A for loop to create an animation of a K-function.
+- <a href="https://github.com/DB7-CourseNotes/TeachingApps#tools">Tools</a>
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#pnorm">pnorm</a>: Calculate and visualize normal probabilities.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#pvalues">pvalues</a>: Calculate and visualize p-values (normal distr).
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#distrshapes">distrshapes</a>: How parameters affect shape of continuous distributions.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#distrshapes_disc">distrshapes_disc</a>: How parameters affect shape ofdiscrete distributions.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#simplepower">SimplePower</a>: Calculate power for simple null/alt (normal distr).
+- <a href="https://github.com/DB7-CourseNotes/TeachingApps#self-discovery-apps">Self-Discovery Apps</a>
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#binormail">Binormail</a>: Normal approximation to the binomial.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#poisbinapprox">PoisBinApprox</a>: Poisson (and normal) approximation to the binomial.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#qqdistrfitting">QQDistrFittting</a>: QQ Plots to test distributional assumptions.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#scattercorr">ScatterCorr</a>: Scatterplots with a fixed correlation.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#influentialpoint">InfluentialPoint</a>: Move around a point to see it's affect on the line.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#multipleregressionpenguins">MultipleRegression Penguins</a>: See the effects of including/removing predictors.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#polyfit">Polynomial Fits</a>: See the effects of overfitting/underfitting with polynomials.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#serialcorrelation">SerialCorrelation</a>: Demonstrate autocorrelation and the runs test.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#meanlessmeansleft">MeanLessMeansLeft</a>: Generate distribution with fixed mean and median.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#denshist">DensHist</a>: Compare density plots to histograms.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#measurespread">MeasureSpread</a>: Fixed IQR and SD.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#poissoncatquant">PoissonCatQuant</a>: Barplots versus histograms.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#Conditionalnormal2">ConditionalNormal2</a>: Visualization of conditional distributions.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#indep">indep</a>: Visualization of independence.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#nlarge">nLarge</a>: How large must *n* be for CLT?.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#Z_or_t">Z_or_t</a>: How large must *n* be for normal p-value?.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#ci">ci</a>: Confidence Intervals.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#samplingDist">samplingDist</a>: Sampling Distributions.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#gettysburg">gettysburg</a>: Sampling designs using the Gettysburg Address.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#Regularization">Regularization</a>: Ridge penalty example.
+- <a href="https://github.com/DB7-CourseNotes/TeachingApps#animations">Animations</a>
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#transform_norm">transform_norm</a>: Tansformation of a Normal to Lognormal
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#BlockVariance">BlockVariance</a>: Blocking reduces variance.
+- <a href="https://github.com/DB7-CourseNotes/TeachingApps#credit-where-credit-is-due">Credit where credit is due</a>: Teaching materials that I can't beat.
+- <a href="https://github.com/DB7-CourseNotes/TeachingApps#spatial-stats-apps">Spatial Stats Apps</a>
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#gausprocess_matern">GausProcess_Matern</a>: How Matern parameters affect a 1D Gaussian process.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#gausfield_matern">GausField_Matern</a>: How Matern parameters affect a 2D Gaussian process.
+    - <a href="https://github.com/DB7-CourseNotes/TeachingApps#spatialfunkfunction">SpatialFun/Kfunciton</a>: A for loop to create an animation of a K-function.
 
 ----
 
@@ -96,7 +96,7 @@ tags$div(HTML("Some questions:
 - -4 = -Inf, 4 = Inf
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Tools/pnorm")
 ```
 
@@ -109,7 +109,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - Demonstrate why we double the p-value for two-sided, and why we use absolute values.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Tools/pvalues")
 ```
 
@@ -122,7 +122,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - The sampled data are also sticky - the seed only changes when the "New Data" button is pressed.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Tools/distrshapes")
 ```
 
@@ -135,7 +135,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
     - Max 10 ghosts before it gets laggy.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Tools/distrshapes_disc")
 ```
 
@@ -148,7 +148,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - Purple shaded area is Type 1 error, green shaded area is 1 - Type 2 error.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Tools/SimplePower")
 ```
 
@@ -162,7 +162,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - Currently very barebones.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/Binormial")
 ```
 
@@ -176,7 +176,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/PoisBinApprox")
 ```
 
@@ -190,7 +190,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - The theoretical distribution can be changed to something other than Normal (currently just Gamma).
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/QQDistrFitting")
 ```
 
@@ -204,7 +204,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - Doesn't generate new data until specified, so animations allow the student to watch the correlation change.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/ScatterCorr")
 ```
 
@@ -217,7 +217,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - Think of drawing axes at (x bar, ybar). This creates four quadrants, two of which contain the line. Points in the quadrants without the line have more influence.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/InfluentialPoint")
 ```
 
@@ -230,7 +230,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
     - Adding bill measurements still changes the estimate for flipper length!
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/MultipleRegressionPenguins")
 ```
 
@@ -242,7 +242,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - Bias can mean lack of generalizability!
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/polyFit")
 ```
 
@@ -256,7 +256,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - Also includes the runs test and the Durbin-Watson test statistic.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/SerialCorrelation")
 ```
 
@@ -271,7 +271,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/MeanLessMeansLeft")
 ```
 
@@ -286,7 +286,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - This tool lets students explore that while also seeing how the histogram changes with binwidth and the density plot changes with bandwidth.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/DensHist")
 ```
 
@@ -300,7 +300,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
     - I wrote a function to fix the IQR and perturb the data until I get the sd that I want. It doesn't always work perfectly.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/MeasureSpread")
 ```
 
@@ -315,7 +315,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
     - When the overdispersion is 0, this is a Poisson distribution.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/PoissonCatQuant")
 ```
 
@@ -329,7 +329,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - ConditionalNormal also exists, which does not have an interactive 3D plot (uses static plots from `plot3D`).
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/ConditionalNormal2")
 ```
 
@@ -343,7 +343,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - Things change when the user chooses disjoint sets or sets either P(A) or P(B) to 0
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/indep")
 ```
 
@@ -357,7 +357,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - Note that the normal approximation is actually biased, and this bias decreases as n increases.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/nLarge")
 ```
 
@@ -371,7 +371,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - Code to generate sampling distributions is shown below plot.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/Z_or_t")
 ```
 
@@ -386,7 +386,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - 
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/ci")
 ```
 
@@ -400,7 +400,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - When a new sample is generated, the colours reflect the new value(s). This is most obvious when adding 1 and when adding 100 many many times.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/samplingDist")
 ```
 
@@ -413,7 +413,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - For stratified, shows the sample of words in each stratum (paragraph).
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/gettysburg")
 ```
 
@@ -426,12 +426,12 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps",
 - Uses **Ridge** regression.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/Regularization")
 ```
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", 
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", 
     subdir = "Apps/Regularization1")
 ```
 
@@ -678,7 +678,7 @@ The following apps are for my own exploration of spatial statistics. Simulating 
 GPs are vital to any spatial processes with a Gaussian term, so this app helps to understand how the parameters affect the process.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", subdir = "SpatialFun/GausProcess_Matern")
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", subdir = "SpatialFun/GausProcess_Matern")
 ```
 
 ### GausField_Matern
@@ -686,7 +686,7 @@ shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", subdir = "SpatialFun/GausPr
 Like a Gaussian Process, but a field instead. Still based on Matern covariance.
 
 ```r
-shiny::runGitHub(repo = "DBecker7/DB7_TeachingApps", subdir = "SpatialFun/GausField_Matern")
+shiny::runGitHub(repo = "DB7-CourseNotes/TeachingApps", subdir = "SpatialFun/GausField_Matern")
 ```
 
 ### SpatialFun/Kfunction
