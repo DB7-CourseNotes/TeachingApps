@@ -26,7 +26,8 @@ ui <- fluidPage(
         value = 0
       ),
       actionButton("doit", "Click me for new data"),
-      actionButton("doall", "Click me for random params")
+      actionButton("doall", "Click me for random params"),
+      checkboxInput("addlm", "Add Best Line?", value = FALSE)
     ),
 
     mainPanel(
@@ -92,6 +93,9 @@ server <- function(input, output) {
       main = paste0("RMSE: ", round(rmse, 3))
     )
     abline(input$b0, input$b1, col = 2)
+    if (input$addlm) {
+      abline(lm(y ~ x, data = xy), col = 3, lwd = 2)
+    }
 
     if (nrow(param_hist) > 5) {
       mycols <- viridis(min(15, nrow(param_hist) - 1))
@@ -102,16 +106,16 @@ server <- function(input, output) {
         col = mycols[col_map], pch = 19, cex = 2,
         xlab = "b0", ylab = "b1",
         main = paste0(
-          "Best: b0=",
+          "Best: b0 = ",
           round(param_hist$x[which.min(param_hist$rmse)], 2),
-          ", b1=",
+          ", b1 = ",
           round(param_hist$y[which.min(param_hist$rmse)], 2)
         )
       )
       points(
         param_hist$x[nrow(param_hist)],
         param_hist$y[nrow(param_hist)],
-        pch = 1, cex = 2, col = 2
+        pch = 1, cex = 2, col = 2, lwd = 2
       )
     }
   })
